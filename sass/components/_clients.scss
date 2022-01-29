@@ -7,22 +7,21 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    padding-top: 30px;
+    font-size: 28px;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-
+    font-size: 28px;
     margin: -15px;
-    /*padding-top: 30px;*/
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: -15px;
-    /*padding-top: 50px;*/
   }
 }
 
@@ -33,8 +32,15 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 0;
   padding: 0;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .clients {

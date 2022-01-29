@@ -6,7 +6,7 @@
   }
 }
 
-.clients__title {
+.product__title {
   color: $title-text-color;
   font-weight: bold;
   font-size: 36px;
@@ -19,6 +19,8 @@
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 33px;
   }
 }
 
