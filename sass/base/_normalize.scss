@@ -14,7 +14,10 @@ Use a better box model (opinionated).
 ::after {
   box-sizing: border-box;
 }
-
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
 /**
 1. Correct the line height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
