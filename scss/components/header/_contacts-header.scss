@@ -1,0 +1,132 @@
+.contacts {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and(min-width:768px) {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.contacts__item:last-child {
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .contacts__icon-mail,
+  .contacts__icon-phone {
+    display: block;
+    fill: currentColor;
+  }
+  .contacts__icon-mail {
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+  }
+  .contacts__icon-phone {
+    margin-right: 10px;
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .contacts__icon-mail,
+  .contacts__icon-phone {
+    display: block;
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}
+
+.contacts__link {
+  color: inherit;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms var(--transition-cubic),
+    font-size 250ms var(--transition-cubic);
+
+  &:hover,
+  &focus {
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    transition: color 250ms var(--transition-cubic);
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__link:hover,
+  .contacts__link:focus {
+    font-size: 34px;
+  }
+  .contacts__icon-mail,
+  .contacts__icon-phone {
+    display: none;
+  }
+}
+
+.menu-socials {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.menu-socials__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.menu-socials__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+
+  width: 2px;
+  height: 100%;
+
+  background-color: rgba(33, 33, 33, 0.2);
+}
